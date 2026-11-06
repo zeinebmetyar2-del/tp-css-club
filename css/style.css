@@ -91,3 +91,130 @@ p {
 #apropos p {
   color: green;
 }
+/* ===== PARTIE 2 : Modele de boite ===== */
+
+/* Reinitialisation */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* En-tete et menu */
+.site-header {
+    padding: 1rem 1.5rem;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    padding: 0.5rem 1rem;
+    border-radius: var(--rayon);
+}
+
+/* Bandeau d'accueil et bouton */
+.hero {
+    padding: 3rem var(--espace);
+}
+
+.hero h1 {
+    margin: 0.5rem 0 0 0;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: 0;
+    border-radius: var(--rayon);
+}
+
+/* Zones de contenu */
+.contenu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem var(--espace);
+}
+
+.contenu h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--couleur-accent);
+}
+
+.deux-colonnes aside {
+    padding: var(--espace);
+    border-radius: var(--rayon);
+}
+
+/* Cartes */
+.carte {
+    padding: var(--espace);
+    border: 1px solid #d8e0ea;
+    border-top: 4px solid var(--couleur-accent);
+    border-radius: var(--rayon);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.carte h3 {
+    margin-top: 0;
+}
+
+/* Tableau */
+.table-conteneur {
+    overflow-x: auto;
+}
+
+.planning {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planning th,
+.planning td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #d8e0ea;
+}
+
+/* Galerie */
+.galerie figure {
+    margin: 0;
+}
+
+.galerie img {
+    border-radius: var(--rayon);
+}
+
+/* Formulaire */
+.formulaire {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #d8e0ea;
+    border-radius: var(--rayon);
+}
+
+.champ {
+    margin-bottom: 1rem;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+}
+
+.site-footer {
+    padding: 1.5rem var(--espace);
+}
