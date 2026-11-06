@@ -1,3 +1,5 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 :root {
   --couleur-principale: #1f4e79;
   --couleur-secondaire: #2e75b6;
@@ -91,130 +93,55 @@ p {
 #apropos p {
   color: green;
 }
-/* ===== PARTIE 2 : Modele de boite ===== */
 
-/* Reinitialisation */
-*, *::before, *::after {
-    box-sizing: border-box;
+/* ===== PARTIE 3 : Couleurs, polices, arriere-plans (3.3) ===== */
+/* Polices : titres et logo en Poppins, avec polices de secours */
+h1, h2, h3, .logo {
+ /* TODO : font-family "Poppins", "Segoe UI", sans-serif */
 }
-
-body {
-    margin: 0;
+.logo {
+ /* TODO : font-size 1.5rem ; font-weight 700 ; letter-spacing 0.05em ;
+ text-transform uppercase ; text-decoration none ; color #fff */
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* En-tete et menu */
-.site-header {
-    padding: 1rem 1.5rem;
-}
-
-.menu {
-    margin: 0;
-    padding: 0;
-}
-
-.menu a {
-    padding: 0.5rem 1rem;
-    border-radius: var(--rayon);
-}
-
-/* Bandeau d'accueil et bouton */
-.hero {
-    padding: 3rem var(--espace);
-}
-
-.hero h1 {
-    margin: 0.5rem 0 0 0;
-}
-
-.btn {
-    padding: 0.7rem 1.5rem;
-    border: 0;
-    border-radius: var(--rayon);
-}
-
-/* Zones de contenu */
-.contenu {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem var(--espace);
-}
-
 .contenu h2 {
-    padding-bottom: 0.3rem;
-    border-bottom: 3px solid var(--couleur-accent);
+ /* TODO : font-size 1.6rem */
 }
-
-.deux-colonnes aside {
-    padding: var(--espace);
-    border-radius: var(--rayon);
+.slogan {
+ /* TODO : font-size 1.2rem */
 }
-
-/* Cartes */
-.carte {
-    padding: var(--espace);
-    border: 1px solid #d8e0ea;
-    border-top: 4px solid var(--couleur-accent);
-    border-radius: var(--rayon);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+.galerie figcaption {
+ /* TODO : font-size 0.9rem ; color #475569 ; text-align center */
 }
-
-.carte h3 {
-    margin-top: 0;
+.site-header {
+ /* TODO : background-color var(--couleur-principale) */
 }
-
-/* Tableau */
-.table-conteneur {
-    overflow-x: auto;
+.hero {
+ /* TODO : color #fff ; text-align center ;
+ background : url("https://picsum.photos/id/1015/1600/700")
+ center / cover no-repeat */
 }
-
-.planning {
-    width: 100%;
-    border-collapse: collapse;
+.hero h1 {
+ /* TODO : font-size 2.2rem ; color #fff ;
+ text-shadow 0 2px 4px rgba(0, 0, 0, 0.3) */
 }
-
-.planning th,
-.planning td {
-    padding: 0.6rem 0.8rem;
-    text-align: left;
-    border-bottom: 1px solid #d8e0ea;
+.btn {
+ /* TODO : font-size 1rem ; font-weight 600 ; text-decoration none ;
+ color var(--couleur-texte) ; background-color var(--couleur-accent) ;
+ cursor pointer */
 }
-
-/* Galerie */
-.galerie figure {
-    margin: 0;
+.btn:hover {
+ /* TODO : background-color hsl(38, 92%, 62%) */
+Page 12
 }
-
-.galerie img {
-    border-radius: var(--rayon);
+.deux-colonnes aside { /* TODO : background-color #e8f0fa */ }
+.carte { /* TODO : background-color #fff */ }
+.planning th { /* TODO : color #fff ; background-color var(--couleur-principale) */
 }
-
-/* Formulaire */
-.formulaire {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border: 1px solid #d8e0ea;
-    border-radius: var(--rayon);
-}
-
-.champ {
-    margin-bottom: 1rem;
-}
-
-.champ input,
-.champ select,
-.champ textarea {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid #94a3b8;
-    border-radius: 6px;
-}
-
+.formulaire { /* TODO : background-color #fff */ }
+.champ label { /* TODO : font-weight 600 */ }
 .site-footer {
-    padding: 1.5rem var(--espace);
+ /* TODO : color #fff ; text-align center ; background-color #0f2a43 */
+}
+.site-footer a {
+ /* TODO : color var(--couleur-accent) */
 }
