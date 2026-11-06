@@ -1,0 +1,93 @@
+:root {
+  --couleur-principale: #1f4e79;
+  --couleur-secondaire: #2e75b6;
+  --couleur-accent: #f59e0b;
+  --couleur-fond: #f5f7fa;
+  --couleur-texte: #1e293b;
+  --rayon: 10px;
+  --espace: 1rem;
+}
+/* ===== PARTIE 1 : Selecteurs et proprietes ===== */
+/* Page 6 */
+
+/* a) Selecteur de type + heritage */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+}
+
+/* b) Groupement de selecteurs */
+h1,
+h2,
+h3 {
+  color: var(--couleur-principale);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--couleur-principale);
+}
+
+/* c) Descendant : les liens situes dans le menu */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* d) Enfant direct */
+.menu > li {
+  list-style: none;
+}
+
+/* e) Classe */
+.important {
+  font-weight: 700;
+  color: #9a3412;
+}
+
+/* f) Frere adjacent */
+.carte h3 + p {
+  color: #475569;
+}
+
+/* g) Selecteurs d'attributs + pseudo-element ::after */
+a[href^="https"]::after {
+  content: " ↗";
+}
+
+a[href$=".pdf"]::after {
+  content: " (PDF)";
+}
+
+/* h) Pseudo-classes */
+.menu a:hover,
+.menu a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.planning tbody tr:nth-child(even) {
+  background-color: #eaf1f8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--couleur-accent);
+}
+
+/* i) Pseudo-element ::before */
+.important::before {
+  content: "★ ";
+  color: var(--couleur-accent);
+}
+p {
+  color: red;
+}
+.important {
+  color: blue;
+}
+#apropos p {
+  color: green;
+}
