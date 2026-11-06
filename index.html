@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Club informatique : projets, ateliers et rencontres.">
+ <title>Club Informatique – Faculté des Sciences</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header class="site-header">
+ <a class="logo" href="#accueil">Club Info</a>
+ <nav aria-label="Navigation principale">
+ <ul class="menu">
+ <li><a href="#apropos">À propos</a></li>
+ <li><a href="#activites">Activités</a></li>
+ <li><a href="#galerie">Galerie</a></li>
+ <li><a href="#inscription">Inscription</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main id="accueil">
+ <section class="hero">
+ <h1>Club Informatique</h1>
+ <p class="slogan">Apprendre, coder et partager ensemble.</p>
+ <a class="btn" href="#inscription">Rejoindre le club</a>
+ </section>
+ <section id="apropos" class="contenu">
+ <h2>À propos</h2>
+ <div class="deux-colonnes">
+ <article>
+ <h3>Notre mission</h3>
+ <p>Le club réunit les étudiants curieux de programmation, de
+ réseaux et de web. Nous apprenons ensemble grâce à des projets
+ concrets et à des ateliers hebdomadaires.</p>
+ <p class="important">Aucun prérequis : il suffit d'être curieux.</p>
+ </article>
+ <aside>
+ <h3>Infos pratiques</h3>
+ <ul>
+ <li>Réunion : chaque mercredi à 14 h</li>
+ <li>Lieu : laboratoire d'informatique 3</li>
+ <li><a href="https://github.com">Notre page GitHub</a></li>
+ <li><a href="programme.pdf">Programme du semestre</a></li>
+ </ul>
+ </aside>
+ </div>
+ </section>
+ <section id="activites" class="contenu">
+ <h2>Nos activités</h2>
+ <div class="cartes">
+ <article class="carte">
+<h3>Ateliers web</h3>
+ <p>HTML, CSS et JavaScript pour créer ses premiers sites.</p>
+ </article>
+ <article class="carte">
+ <h3>Projets Git</h3>
+ <p>Travail en équipe avec Git et GitHub sur de vrais projets.</p>
+ </article>
+ <article class="carte">
+ <h3>Défis de code</h3>
+ <p>Concours amicaux d'algorithmique chaque mois.</p>
+ </article>
+ </div>
+ <h3>Planning des ateliers</h3>
+ <div class="table-conteneur">
+ <table class="planning">
+ <thead>
+ <tr><th>Jour</th><th>Atelier</th><th>Salle</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Lundi</td><td>Initiation HTML et CSS</td><td>Labo 1</td></tr>
+ <tr><td>Mercredi</td><td>Git et GitHub</td><td>Labo 3</td></tr>
+ <tr><td>Jeudi</td><td>Algorithmique et défis</td><td>Salle 12</td></tr>
+ <tr><td>Samedi</td><td>Projet web d'équipe</td><td>Labo 2</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+ <section id="galerie" class="contenu">
+ <h2>Galerie</h2>
+ <div class="galerie">
+ <figure>
+ <img src="https://picsum.photos/id/10/400/300"
+ alt="Photo d'illustration n°1" width="400" height="300" loading="lazy">
+ <figcaption>Atelier de rentrée</figcaption>
+ </figure>
+ <figure>
+ <img src="https://picsum.photos/id/20/400/300"
+ alt="Photo d'illustration n°2" width="400" height="300" loading="lazy">
+ <figcaption>Séance de code</figcaption>
+ </figure>
+ <figure>
+ <img src="https://picsum.photos/id/30/400/300"
+ alt="Photo d'illustration n°3" width="400" height="300" loading="lazy">
+ <figcaption>Projet d'équipe</figcaption>
+ </figure>
+ <figure>
+ <img src="https://picsum.photos/id/40/400/300"
+ alt="Photo d'illustration n°4" width="400" height="300" loading="lazy">
+ <figcaption>Défi de code</figcaption>
+ </figure>
+ <figure>
+ <img src="https://picsum.photos/id/60/400/300"
+ alt="Photo d'illustration n°5" width="400" height="300" loading="lazy">
+ <figcaption>Soirée du club</figcaption>
+ </figure>
+ <figure>
+ <img src="https://picsum.photos/id/70/400/300"
+ alt="Photo d'illustration n°6" width="400" height="300" loading="lazy">
+ <figcaption>Remise des prix</figcaption>
+ </figure>
+ </div>
+ </section>
+ <section id="inscription" class="contenu">
+ <h2>Inscription</h2>
+ <form class="formulaire" action="#" method="post">
+ <div class="champ">
+ <label for="nom">Nom complet</label>
+ <input type="text" id="nom" name="nom" required>
+ </div>
+ <div class="champ">
+ <label for="email">Adresse e-mail</label>
+ <input type="email" id="email" name="email" required>
+ </div>
+ <div class="champ">
+ <label for="niveau">Niveau d'études</label>
+ <select id="niveau" name="niveau">
+ <option value="l1">Licence 1</option>
+ <option value="l2">Licence 2</option>
+ <option value="l3">Licence 3</option>
+ </select>
+ </div>
+ <div class="champ">
+ <label for="message">Message</label>
+ <textarea id="message" name="message" rows="4"></textarea>
+ </div>
+ <button type="submit" class="btn">Envoyer</button>
+ </form>
+ </section>
+ </main>
+ <footer class="site-footer">
+ <p>© 2026 Club Informatique – Faculté des Sciences</p>
+ <p><a href="mailto:club@exemple.tn">club@exemple.tn</a></p>
+ </footer>
+</body>
+</html>
